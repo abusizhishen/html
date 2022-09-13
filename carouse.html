@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .carouse {
+            position: relative;
+            margin: 40px auto;
+            width: 960px;
+            height: 640px;
+        }
+       
+        .btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn:hover {
+            background-color: yellow;
+            color: white;
+        }
+
+        .leftbtn {
+            position: absolute;
+            top:50%;
+            margin-top: -20px;
+            left: 10px;
+        }
+
+        .rightbtn {
+            position: absolute;
+            top:50%;
+            margin-top: -20px;
+            right: 10px;
+        }
+
+        div ol {
+            position: absolute;
+            left: 200px;
+            width: 200px;
+            /* background-color: pink; */
+            bottom: 20px;
+            list-style: none;
+        }
+
+        ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        ol li:hover {
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="carouse">
+        <img src="img/screen.jpg" alt="">
+        <a href="#" class="leftbtn btn">&lt</a>
+        <a href="#" class="rightbtn btn">&gt</a>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>
